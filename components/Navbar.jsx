@@ -51,9 +51,9 @@ function Navbar() {
                 user? 
                         <div className='p-5 '>
                             
-                            <Link href="/dashboard">
-                                <a>Dashboard</a>
-                            </Link>
+                            {/* <Link href="/dashboard"> */}
+                                <a href="/dashboard>Dashboard</a>
+                            // </Link>
                             <button className='px-5' onClick={handleLogout}>
                                 Logout
                             </button>
@@ -64,9 +64,9 @@ function Navbar() {
                         {/* <Link href="/login"> */}
                             <a href='/login' className="login p-5">login</a>
                         {/* </Link> */}
-                        <Link href="/registration">
-                            <a className="register p-5">register</a>
-                        </Link>
+                        {/* <Link href="/registration"> */}
+                            <a href="/registration" className="register p-5">register</a>
+                        {/* </Link> */}
                         </div>
             }
         </div>
