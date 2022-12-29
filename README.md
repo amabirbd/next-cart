@@ -16,4 +16,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deployed on Vercel
 
-Vercel Live [Demo](https://next-cart-gblg.vercel.app/) from the creators of Next.js.
+Hosted on Vercel [Live Demo](https://next-cart-gblg.vercel.app/)
