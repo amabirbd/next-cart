@@ -32,7 +32,7 @@ function Login() {
     }
 
     
-  }, [user, isError, isSuccess, message, dispatch])
+  }, [user])
 
   const onChange = (e) => {
     setFormData((prevState) => ({
