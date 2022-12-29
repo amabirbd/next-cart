@@ -52,7 +52,7 @@ function Navbar() {
                         <div className='p-5 '>
                             
                             <Link href="/dashboard">
-                                <a href="">Dashboard</a>
+                                <a>Dashboard</a>
                             </Link>
                             <button className='px-5' onClick={handleLogout}>
                                 Logout
@@ -61,9 +61,9 @@ function Navbar() {
                     :
 
                         <div className='flex'>
-                        <Link href="/login">
-                            <a className="login p-5">login</a>
-                        </Link>
+                        {/* <Link href="/login"> */}
+                            <a href='/login' className="login p-5">login</a>
+                        {/* </Link> */}
                         <Link href="/registration">
                             <a className="register p-5">register</a>
                         </Link>
