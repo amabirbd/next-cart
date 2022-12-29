@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../features/cart/cartSlice';
@@ -11,7 +10,7 @@ function ProductCard({product}) {
     <div className='flex'>
         <div className="w-60 max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-            <Image className="p-8 rounded-t-lg" src={product.image} alt="product image" />
+            <img className="p-8 rounded-t-lg" src={product.image} alt="product image" />
         </a>
         <div className="px-5 pb-5">
             <a href="#">

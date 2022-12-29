@@ -1,11 +1,14 @@
 import { Provider } from 'react-redux'
+import Layout from '../components/Layout'
 import { store } from '../features/store'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
   <Provider store={store}>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </Provider>
   )
 }

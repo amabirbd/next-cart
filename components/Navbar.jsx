@@ -40,15 +40,19 @@ function Navbar() {
   return (
     <div className='flex justify-center mb-5 bg-blue-700 text-white'>
         <div className="right flex justify-between ">
+            <div className='p-5 font-bold mr-20'>
+                <Link href="./">Home</Link>
+            </div>
+            
             <Link href="/cart">
-                <a className="cart p-5">Cart({cart.length})</a>
+                <a className="cart p-5">Cart<span className='text-orange-500 font-bold'>({cart.length})</span></a>
             </Link>
             {
                 user? 
                         <div className='p-5 '>
                             
                             <Link href="/dashboard">
-                                Dashboard
+                                <a href="">Dashboard</a>
                             </Link>
                             <button className='px-5' onClick={handleLogout}>
                                 Logout

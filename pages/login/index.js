@@ -24,15 +24,14 @@ function Login() {
 
   useEffect(() => {
     if (isError) {
-      console.error(message)
+      console.error("some error occured while logging in")
     }
 
     if (isSuccess || user) {
       router.push('/')
     }
-
     
-  }, [user])
+  }, [user, isSuccess, isError, router])
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -59,12 +58,11 @@ function Login() {
   }
 
   return (
-    <div className="m-auto w-1/3	" >
+    <div className="m-auto w-2/3	" >
       <section className='heading'>
         <h1 className='text-3xl font-bold m-10'>
          Login
         </h1>
-        <p>Login and start setting goals</p>
       </section>
 
       <section className='form'>

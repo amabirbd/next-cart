@@ -7,7 +7,7 @@ function CartItem({item}) {
   return (
     <div className='flex justify-between m-2 p-2'>
         <div >
-            {item.title}({item.quantity})
+            {item.title}<span className='text-orange-500 font-bold'>({item.quantity})</span>
         </div>
         <div className='flex'>
             <button onClick={()=>dispatch(decrement(item.id))} className='px-3 mx-2 text-2xl font-bold bg-blue-300 rounded hover:bg-blue-600 transition ease-in-out'>-</button>

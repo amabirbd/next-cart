@@ -26,14 +26,14 @@ function Register() {
 
   useEffect(() => {
     if (isError) {
-      console.error(message)
+      console.error("some error occured while registering")
     }
 
     if (isSuccess || user) {
       router.push('/')
     }
     
-  }, [user, isError, isSuccess, message, dispatch])
+  }, [user, isError, isSuccess, router])
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -66,7 +66,7 @@ function Register() {
   }
 
   return (
-    <div className='m-auto w-1/3	'>
+    <div className='m-auto w-2/3	'>
       <section className='heading'>
         <h1 className='text-3xl font-bold m-10'>
            Register
